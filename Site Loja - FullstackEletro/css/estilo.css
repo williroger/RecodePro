@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300;600&family=Roboto&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#formas_pagamento {
+    color: red;
+}
+#rodape {
+    text-align: center;
+    background-color: red;
+    width: 99%;
+    height: 150px;
+    border: 0;
+    bottom:0;
+    color:white;
+    font-weight: bold;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.menu {
+    background-color: red;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.titulos{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+.titulos_lojas{
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+.preco{
+    font-family: 'Oswald', sans-serif;
+    color:red;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+.box_dos_produtos{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    margin: 30px 20px 30px 20px;
+    vertical-align: bottom;
+}
+.lojas{
+    align-items: center;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 30px 20px 30px 20px;
+}
+.central{
+    display: block;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 10px 12px 0;
+}
+.barra_lateral{
+    float: left;
+    width: 190px;
+    position: relative;
+    margin-right: 20px;
+    border-style: solid;
+    border-color: red;
+    padding: 10px;
+    border-radius: 50px 20px;
+}
+.barra_lateral h3{
+    text-align: center;
+}
+.social{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.produtos {
+    overflow: hidden;
+}
