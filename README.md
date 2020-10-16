@@ -1,2 +1,2 @@
 # RecodePro
-projetos feitos no curso da RecodePro
+Projetos feitos no curso da RecodePro
