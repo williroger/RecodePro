@@ -6,13 +6,10 @@
         <link rel="stylesheet" href="./css/estilo.css">
     </head>
     <body>
-          <!--menu-->
-          <nav class="menu">
-            <a href="index.html"><img src="./imagens/logo.png" width="100px">
-            <a href="produtos.html">| Nosso Produtos |</a>
-            <a href="lojas.html">Nossas Lojas |</a>
-            <a href="contato.html">Fale Conosco  |</a>
-        </nav>
+        <!--menu-->
+        <?php
+        include('menu.php');    
+        ?> 
         <!--fim do menu-->
         <h2 class="titulos">Nossas Lojas</h2>
         <hr>
@@ -38,11 +35,9 @@
             <p>(91) 1234-5678</p>
         </div>
        <!--rodapé-->
-    <footer id="rodape">
-        <p id="formas_pagamento"><b>Formas de Pagamento:</b></p>
-        <img src="./imagens/formas-pg.png" height="42">
-        <p>&copy; Recode Pro</p><br>
-    </footer>
+    <?php
+        include('rodape.php');    
+    ?>
 <!--fim do rodapé-->
     </body>
 </html>

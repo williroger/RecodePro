@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 27-Out-2020 às 02:48
+-- Tempo de geração: 03-Nov-2020 às 23:56
 -- Versão do servidor: 10.4.14-MariaDB
 -- versão do PHP: 7.4.11
 
@@ -20,6 +20,26 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `fullstack`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `comentarios`
+--
+
+CREATE TABLE `comentarios` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(100) DEFAULT NULL,
+  `msg` varchar(300) DEFAULT NULL,
+  `data` datetime DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `comentarios`
+--
+
+INSERT INTO `comentarios` (`id`, `nome`, `msg`, `data`) VALUES
+(1, 'Marcelinho', 'E aí, pessoal, tudo bom? heheheh Chat do uol', '2020-11-03 19:54:56');
 
 -- --------------------------------------------------------
 
@@ -73,22 +93,28 @@ CREATE TABLE `tb_produto` (
 --
 
 INSERT INTO `tb_produto` (`id_prod`, `nome_prod`, `descricao_prod`, `preco_prod`, `img_prod`) VALUES
-(1, 'geladeiras', 'Geladeira Brastemp Frost Free 462 litros', '3080.00', '/geladeira-brastemp.webp'),
-(2, 'geladeiras', 'Retrô Frost Free 352 Litros Yellow', '4080.00', '/geladeira_retro.png'),
-(3, 'geladeiras', 'Geladeira Consul Frost Free 386 litros', '2080.00', 'geladeira_consul.webp'),
-(4, 'fogoes', 'Fogão 4 Bocas de Piso Esmaltec', '38550.00', '/fogao-esmaltec.webp'),
-(5, 'fogoes', 'Fogão Brastemp 5 Bocas, Inox, Turbo', '415.00', '/fogao_brastemp.webp'),
-(6, 'microondas', 'Forno Micro-ondas 31 litros', '450.00', '/Micro-Ondas-EletroLux.webp'),
-(7, 'microondas', 'Micro-ondas Panasonic 25 litros', '525.00', '/microondas-panasonic.webp'),
-(8, 'microondas', 'Micro-ondas Philco 25 Litros', '1000.00', '/microondas-philco.webp'),
-(9, 'lavaloucas', 'Lava Louças Eletrolux-Polishop', '1200.00', '/lavaloucas-eletrolux.webp'),
-(10, 'lavaloucas', 'Lava-louças Branca 8 Serviços', '1050.00', '/lavaloucas-eletrolux2.webp'),
-(11, 'lavadoura', 'Lavadora de Roupas Consul 9Kg', '980.00', '/Lavadora-Roupas-Consul.webp'),
-(12, 'lavadoura', 'Lavadora de Roupas Panasonic 12kg', '1080.00', '/lavadoura-panasonic.webp');
+(1, 'geladeiras', 'Geladeira Brastemp Frost Free 462 litros', '3080.00', './imagens/geladeira-brastemp.webp'),
+(2, 'geladeiras', 'Retrô Frost Free 352 Litros Yellow', '4080.00', './imagens/geladeira_retro.png'),
+(3, 'geladeiras', 'Geladeira Consul Frost Free 386 litros', '2080.00', './imagens/geladeira_consul.webp'),
+(4, 'fogoes', 'Fogão 4 Bocas de Piso Esmaltec', '38550.00', './imagens/fogao-esmaltec.webp'),
+(5, 'fogoes', 'Fogão Brastemp 5 Bocas, Inox, Turbo', '415.00', './imagens/fogao_brastemp.webp'),
+(6, 'microondas', 'Forno Micro-ondas 31 litros', '450.00', './imagens/Micro-Ondas-EletroLux.webp'),
+(7, 'microondas', 'Micro-ondas Panasonic 25 litros', '525.00', './imagens/microondas-panasonic.webp'),
+(8, 'microondas', 'Micro-ondas Philco 25 Litros', '1000.00', './imagens/microondas-philco.webp'),
+(9, 'lavaloucas', 'Lava Louças Eletrolux-Polishop', '1200.00', './imagens/lavaloucas-eletrolux.webp'),
+(10, 'lavaloucas', 'Lava-louças Branca 8 Serviços', '1050.00', './imagens/lavaloucas-eletrolux2.webp'),
+(11, 'lavadoura', 'Lavadora de Roupas Consul 9Kg', '980.00', './imagens/Lavadora-Roupas-Consul.webp'),
+(12, 'lavadoura', 'Lavadora de Roupas Panasonic 12kg', '1080.00', './imagens/lavadoura-panasonic.webp');
 
 --
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices para tabela `comentarios`
+--
+ALTER TABLE `comentarios`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices para tabela `tb_pedidos`
@@ -105,6 +131,12 @@ ALTER TABLE `tb_produto`
 --
 -- AUTO_INCREMENT de tabelas despejadas
 --
+
+--
+-- AUTO_INCREMENT de tabela `comentarios`
+--
+ALTER TABLE `comentarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `tb_pedidos`
