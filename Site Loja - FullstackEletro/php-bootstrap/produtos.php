@@ -41,7 +41,7 @@
         </div>
     </nav>
 <!---fim menu--->
-    <main class="page catalog-page" style="height: 100%;">
+    <main class="page catalog-page">
         <section class="d-flex clean-block clean-catalog dark" style="height: 100%;background: linear-gradient(132deg, #e5053a 0%, #f95e59 100%);">
             <div class="container">
                 <div class="block-heading">
