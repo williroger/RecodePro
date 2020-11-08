@@ -1,0 +1,21 @@
+
+<div class="products">
+                                <div class="row">
+<?php 
+            $sql = "select * from bd_fs.tb_produto";
+            $result = $conn->query($sql);
+                
+            if ($result->num_rows > 0) {
+                while($rows = $result->fetch_assoc()){?>
+            	<div class="col-12 col-md-6 col-lg-4" id="<?php echo $rows["nome_prod"]; ?>"" style="display:inline-block;">
+                <img src="<?php echo $rows["img_prod"];?>" width="120px" onclick="destaque(this)">
+                <br>
+                <p><?php echo $rows["descricao_prod"];?> </p>
+                <p id="preco_prod"><?php echo $rows["preco_prod"];?></p> <!--criar coluna de porcentagem de desconto futuramente-->
+            	</div>
+    <?php  
+            }
+            }else {
+            echo "Nenhum produto cadastrado!";
+            }
+?>
