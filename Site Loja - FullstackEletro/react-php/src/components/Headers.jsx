@@ -1,18 +1,7 @@
 import React, { useState } from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
-} from 'reactstrap';
+import {Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink,NavbarText} from 'reactstrap';
+import shop from '../pages/imagens/car-shop.png';
+import logo from '../pages/imagens/logo.png';
 
 const Headers = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +10,8 @@ const Headers = (props) => {
   
     return (
       <div>
-        <Navbar color="bg-white text-dark" light expand="md">
-          <NavbarBrand href="/">FULLSTACK ELETRO</NavbarBrand>
+        <Navbar className="bg-red-2 justify-content-around mb-5" light expand="md">
+          <NavbarBrand href="/"><img height="60px" src={logo} alt="Full Stak Eletro"/></NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
@@ -36,7 +25,7 @@ const Headers = (props) => {
                 <NavLink href="/contato">Contato</NavLink>
               </NavItem>
             </Nav>
-            <NavbarText>Carrinho</NavbarText>
+            <NavbarText><img width="50%" src={shop}/></NavbarText>
           </Collapse>
         </Navbar>
       </div>

@@ -1,33 +1,41 @@
 import React from 'react';
 import {
   Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
+  CardTitle, Button
 } from 'reactstrap';
+import Belem from '../pages/imagens/belem.jpeg'
+import Rio from '../pages/imagens/rio.jpeg'
+import Sampa from '../pages/imagens/saopaulo.jpeg'
 
 const NossasLojas = (props) => {
   return (
-    <div>
-      <Card className="container">
+      <div className="container m-5">
+            <div className="d-flex flex-wrap justify-content-around">
+      <Card className="cardlojas">
         <CardBody>
+        <CardImg top src={Belem}/>
           <CardTitle tag="h5">Belém</CardTitle>
           <CardText>Avenida Presidente Tal, 3º andar, Centro</CardText>
           <Button color="danger">(91) 1234-5678</Button>
         </CardBody>
       </Card>
-      <Card className="container">
+      <Card className="cardlojas">
         <CardBody>
-          <CardTitle tag="h5">Belém</CardTitle>
+          <CardImg top src={Sampa}/>
+          <CardTitle tag="h5">São Paulo</CardTitle>
           <CardText>Avenida Presidente Tal, 3º andar, Centro</CardText>
           <Button color="danger">(91) 1234-5678</Button>
         </CardBody>
       </Card>
-      <Card className="container">
+      <Card className="cardlojas">
         <CardBody>
-          <CardTitle tag="h5">Belém</CardTitle>
+          <CardImg top src={Rio}/>
+          <CardTitle tag="h5">Rio de Janeiro</CardTitle>
           <CardText>Avenida Presidente Tal, 3º andar, Centro</CardText>
           <Button color="danger">(91) 1234-5678</Button>
         </CardBody>
       </Card>
+    </div>
     </div>
   );
 };

@@ -3,8 +3,20 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
-    color: white;
+    color: #ffff;
     text-align: center;
   }
-  
+.bg-red-2 {
+  background-image: linear-gradient(15deg, #cf1919 0%, #ec5345 100%);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+#left {
+  position: fixed;
+}
+
+#body-section{
+  background-image: linear-gradient(15deg, #cf1919 0%, #ec5345 100%);
+}
