@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Api - Testes</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        .conteudo img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h3>Achar endereco pelo CEP</h3>           
+            </div>
+    
+            <div class="card-body">
+                <form action="/envia-cep" method="POST">
+                    <div class="form-group">
+                              <label for="cep">Cep</label>
+                              <input class="form-control" type="text" name="cep" id="cep">
+                              <input type="submit" class="btn btn-outline-success mt-2" value="Buscar">
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header bg-danger">
+                <h3>Mortes por Covid-19 por Estado</h3>           
+            </div>
+    
+            <div class="card-body bg-dark">
+                <form action="/covid" method="POST">
+                    <div class="form-group col-md-4">
+                        <label for="estado">Estado</label>
+                        <select id="estado" name="estado" class="form-control">
+                          <option selected value="ac">Acre</option>
+                          <option value="al">Alagoas</option>
+                          <option value="ap">Amapá</option>
+                          <option value="am">Amazonas</option>
+                          <option value="ba">Bahia</option>
+                          <option value="ce">Ceará</option>
+                          <option value="go">Goiás</option>
+                          <option value="ma">Maranhão</option>
+                          <option value="mt">Mato Grosso</option>
+                          <option value="ms">Mato Grosso do Sul</option>
+                          <option value="mg">Minas Gerais</option>
+                          <option value="pa">Pará</option>
+                          <option value="pb">Paraíba</option>
+                          <option value="pr">Paraná</option>
+                          <option value="pe">Pernambuco</option>
+                          <option value="pi">Piauí</option>
+                          <option value="rj">Rio de Janeiro</option>
+                          <option value="rn">Rio Grande do Norte</option>
+                          <option value="rs">Rio Grande do Sul</option>
+                          <option value="ro">Rondônia</option>
+                          <option value="rr">Roraima</option>
+                          <option value="sc">Santa Catarina</option>
+                          <option value="sp">São Paulo</option>
+                          <option value="se">Sergipe</option>
+                          <option value="to">Tocantins</option>
+                          <option value="df">Distrito Federal</option>
+                        </select>
+                    </div>
+                     <!-- <div class="form-group">
+                              <label for="estado">Cep</label>
+                              <input class="form-control" type="text" name="estado" id="estado">
+                              <input type="submit" class="btn btn-outline-success mt-2" value="Consultar">
+                    </div> -->
+                    <input type="submit" class="btn btn-outline-danger mt-2" value="Consultar">
+                </form>
+   
+            </div>
+        </div>
+    </div>
+</body>
+</html>
