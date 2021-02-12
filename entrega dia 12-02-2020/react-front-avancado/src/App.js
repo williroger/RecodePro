@@ -11,15 +11,15 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-        <Suspense fallback={ <p>Carregando</p> }>
+        <Suspense fallback={ <p>Carregand...</p> }>
           <ImgLogo/>
         </Suspense>
         
-        <Suspense fallback={ <p>Carregando</p> }>
+        <Suspense fallback={ <p>Carregando...</p> }>
           <Texto />
         </Suspense>
 
-        <Suspense fallback={ <p>Carregando</p> }>
+        <Suspense fallback={ <p>Carregando...</p> }>
           <Link />
         </Suspense>
         
