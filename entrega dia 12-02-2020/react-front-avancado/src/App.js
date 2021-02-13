@@ -2,6 +2,9 @@ import './App.css';
 
 import {lazy, Suspense} from  'react';
 
+// import {  } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Texto = lazy(() => import('./Text') );
 const Link = lazy(() => import('./Link') );
 const ImgLogo = lazy(() => import('./Img') );
@@ -10,8 +13,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
-        <Suspense fallback={ <p>Carregand...</p> }>
+    {/* carregando imagem, texto e link */}
+        <Suspense fallback={ <p>Carregando...</p> }>
           <ImgLogo/>
         </Suspense>
         
