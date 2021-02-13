@@ -6,7 +6,7 @@ export default function Button() {
         type="button"
         className={styles.error}
         >
-            Destruição
+            Go! Go!
         </button>
     )
 }
